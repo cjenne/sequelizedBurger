@@ -2,16 +2,16 @@
 var mysql = require("mysql");
 var connection;
 
-if (process.env.jawsDbBurger) {
+if (process.env.JawsDB) {
   // console.log("jawsdb connect");
-  connection = mysql.createConnection(process.env.jawsDbBurger);
+  connection = mysql.createConnection(process.env.JawsDB);
 } else {
   // console.log("is local sql connect running");
   connection = mysql.createConnection({
   host: "localhost",
   // port: 3306,
   user: "root",
-  password: "_removed password",
+  password: "Monk3yH8sPa$$word$",
   database: "burger_db"
   })
 }
@@ -34,5 +34,5 @@ if (process.env.jawsDbBurger) {
 // });
 
 // Export connection for our ORM to use.
-connection.connect();
+// connection.connect();
 module.exports = connection;
