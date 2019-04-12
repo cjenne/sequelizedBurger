@@ -2,16 +2,16 @@
 var mysql = require("mysql");
 var connection;
 
-if (process.env.JAWSDB_URL) {
+if (process.env.jawsDbBurger) {
   // console.log("jawsdb connect");
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.jawsDbBurger);
 } else {
   // console.log("is local sql connect running");
   connection = mysql.createConnection({
   host: "localhost",
   // port: 3306,
   user: "root",
-  password: "Monk3yH8sPa$$word$",
+  password: "_removed password",
   database: "burger_db"
   })
 }
@@ -20,7 +20,7 @@ if (process.env.JAWSDB_URL) {
 //   host: "localhost",
 //   port: 3306,
 //   user: "root",
-//   password: "Monk3yH8sPa$$word$",
+//   password: "removed password",
 //   database: "burger_db"
 // });
 
