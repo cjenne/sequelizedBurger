@@ -14,4 +14,4 @@ if (process.env.JAWSDB_URL) {
   });
 };
 
-var mysql = require('mysql');
+// var mysql = require('mysql');
