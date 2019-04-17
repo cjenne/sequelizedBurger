@@ -1,4 +1,6 @@
 var express = require("express");
+//require db - add to port call
+var db = require("/models");
 
 var app = express();
 // Serve static content for the app from the "public" directory in the application directory.
