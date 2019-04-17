@@ -2,7 +2,7 @@ var express = require("express");
 
 var router = express.Router();
 // edit burger model to match sequelize
-var db = require("../models/");
+var db = require("../models");
 
 // get route -> index
 router.get("/", function(req, res) {
